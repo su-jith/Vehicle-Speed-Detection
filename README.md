@@ -1,17 +1,7 @@
 Vehicle Speed Detection System
 This project implements a Vehicle Speed Detection System using YOLOv8 for vehicle detection in video feeds. The system identifies vehicles moving over a specified speed limit and stores relevant information in a MongoDB database, including vehicle ID, class, speed, and an image of the vehicle. This project serves as an essential tool for traffic monitoring, offering a cost-effective solution for real-time traffic management and analysis.
 
-Table of Contents
-Project Overview
-Features
-Requirements
-Installation
-Usage
-Database Structure
-Configuration
-Future Enhancements
-License
-Project Overview
+
 The Vehicle Speed Detection System leverages YOLOv8 for high-accuracy vehicle detection in video frames. The system is capable of:
 
 Detecting vehicle direction based on user-defined red and blue lines.
@@ -30,31 +20,7 @@ YOLOv8 (via the Ultralytics library)
 Additional Python libraries (see requirements.txt)
 Note: A GPU is recommended for optimal performance but not required.
 
-Installation
-Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/username/vehicle-speed-detection.git
-cd vehicle-speed-detection
-Install dependencies:
-
-bash
-Copy code
-pip install -r requirements.txt
-Set up MongoDB and update the database URI in the configuration file.
-
-Install the Ultralytics library for YOLOv8:
-
-bash
-Copy code
-pip install ultralytics
-Usage
-Run the Detection Script: Run pre.py to start the vehicle detection with GUI integration:
-
-bash
-Copy code
-python pre.py
 Video Source: Manually specify the video file or video stream source in the GUI for analysis.
 
 Database Storage: Vehicle records exceeding the speed limit will be stored in MongoDB.
